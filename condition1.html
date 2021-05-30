@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Condition</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var a = 5;
+        var b = 5;
+        if (a == b) {
+            document.getElementById("demo").innerHTML = "value.match";
+        }
+
+    </script>
+
+
+    <p id="tyu"></p>
+    <script>
+        var s = 10;
+        var g = 20;
+        if (s == g) {
+            document.getElementById("tyu").innerHTML = "value match";
+        }
+        else {
+            document.getElementById("tyu").innerHTML = "value not match";
+        }
+    </script>
+
+    <p id="vbn"></p>
+    <button type="button" onclick="myFuction('vbn')"> Click</button>
+    <script>
+        function myFuction() {
+            var v = 78;
+            var n = 56;
+            if (v > n) {
+                document.getElementById("vbn").innerHTML = "value is greater";
+            }
+            else if (v < n) {
+                document.getElementById("vbn").innerHTML = "value is smaller";
+
+            }
+            else {
+                document.getElementById("vbn").innerHTML = "both values are same";
+            }
+        }
+    </script>
+
+
+    <p id="ok"></p>
+    <button type="button" onclick="checkCondition()">Click to check</button>
+    <script>
+        function checkCondition() {
+            var i = 100;
+            switch (i) {
+                case 1:
+                    document.getElementById('ok').innerHTML = "Value is 5";
+                    break;
+                case 2:
+                    document.getElementById('ok').innerHTML = "Value is 10";
+                    break;
+                case 3:
+                    document.getElementById('ok').innerHTML = "Value is 15";
+                    break;
+                case 4:
+                    document.getElementById('ok').innerHTML = "Value is 20";
+                    break;
+                default:
+                    document.getElementById('ok').innerHTML = "No value match";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
